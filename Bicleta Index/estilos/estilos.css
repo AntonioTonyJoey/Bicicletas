@@ -1,0 +1,119 @@
+:root{
+    --primario: #c62f3f;
+    --primarioOscuro: #ac232b;
+    --secundario: #45B5ED;
+    --secundarioOscuro: #377DA1;
+    --blanco: #FFF;
+    --negro: rgb(0, 0, 0);
+    --noticias: #ED5C6B;
+
+    --fuentePrincipal: 'Source Code Pro', monospace;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/*Globales*/
+body{
+    /*background-image: url(../imagenes/patron-bicicleta-deportiva.jpg);*/
+    background-image: linear-gradient(to top, var(--secundario) 0%, var(--secundarioOscuro) 100%);
+    padding: 2rem;
+}
+header{
+    background-image: url(../imagenes/encabezado.jpg);
+    /*background-image: linear-gradient(to top, var(--blanco) 0%, var(--negro) 100%);*/
+    height: 17rem;
+    display: flex;
+    justify-content: center;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to top, var(--noticias) 0%, var(--primarioOscuro) 100%);
+    margin-top: 1rem;
+}
+a{
+    text-decoration: none;
+}
+h1, h2, h3{
+    text-align: center;
+    color: var(--negro);
+    font-family: var(--fuentePrincipal);
+}
+header h1{
+    font-size: 3rem;
+    color: var(--blanco);
+}
+h2{
+    font-size: 2rem;
+    color: var(--blanco);
+}
+h3{
+    font-size: 1.6rem;
+}
+svg{
+    padding: 1rem;
+}
+p{
+    color: var(--blanco);
+    background-color: black;
+}
+
+.navegacion-principal{
+    margin-bottom: 2rem;
+    background-image: linear-gradient(to top, var(--primarioOscuro) 0%, var(--primario) 100%);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.navegacion-principal a{
+    color: var(--blanco);
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.carrucel{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.cuerpo{
+    background-image: linear-gradient(to top, var(--noticias) 0%, var(--primarioOscuro) 100%);
+    height: 100rem;
+    padding-top: 1rem;
+}
+.cuerpo .noticias-secc{
+    background-image: linear-gradient(to top, #152e37 0%, #2c718c 100%);
+    padding-top: 1rem;
+    width: 100%;
+    height: 50  rem;
+    text-align: center;
+}
+.cuerpo .noticias-secc p{
+    background-color: transparent;
+    font-size: 2.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-align: left;
+}
+.cuerpo .noticias-secc span{
+    color: var(--blanco);
+    font-size: 4rem;
+}
+
+a:hover{
+    font-size: 3rem;
+}
+a.logout{
+    display: none;
+}
